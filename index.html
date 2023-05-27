@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="Bootstrap/bootstrap.min.css"
+    />
+    <title>GALLERY with PEXEL API</title>
+    <style>
+        body {
+          background-color: black
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header">
+        <h2 class="text-center my-4 p-4 display-4">
+          <a class="main" href="./index.html">GALLERY</a>
+        </h2>
+        <form action="" class=" search m-4 p-4 row">
+            <div class="col-md-2"></div>
+            <div class="col-md-5 border-one">
+                <input type="text" name="search" class="p-3 px-4 m-2 search-input" placeholder="Type here"required autocomplete="off"/>
+            </div>
+            <div class="col-md-2 border-one ">
+                <button type="submit-one" class="submit p-2 px-3  m-3">SEARCH</button>
+            </div>
+            <div class="col-md-3"></div>
+        </form>
+      </header>
+      <main>
+        <div class="container gallery">
+        </div>
+        <div class="nav-button d-flex align-content-center justify-content-center">
+          <button class="more submit m-3 p-2 px-3">More</button>
+        </div>
+      </main>
+    </div>
+    <script src="Bootstrap/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
