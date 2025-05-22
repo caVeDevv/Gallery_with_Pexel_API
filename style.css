@@ -67,3 +67,37 @@ h2 .main {
   object-fit: cover;
   border-radius: 7px;
 }
+.img-container {
+  height: 300px;
+  position: relative;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.img-container img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+/* Loader Spinner */
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-top: 5px solid var(--main);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

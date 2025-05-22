@@ -46,8 +46,12 @@ function generatePhotos(data) {
     const galleryEng = document.createElement("div");
     galleryEng.classList.add("gallery-img");
     galleryEng.innerHTML = `
-          <img src="${photo.src.large} class="loud"></img>
-          `;
+    <div class="img-container">
+      <div class="loader"></div>
+      <img src="${photo.src.large}" class="loud" onload="this.previousElementSibling.style.display='none'; this.style.display='block';"/>
+    </div>
+  `;
+
     gaLery.appendChild(galleryEng);
   });
 }
